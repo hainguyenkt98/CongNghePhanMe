@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../../JQuery/jquery-3.3.1.min.js"></script>
+	<script src="../../Popper/popper.min.js"></script>
+	<script src="../../Bootstrap-4.0.0/js/bootstrap.bundle.min.js"></script>
+	<script src="../../Bootstrap-4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../main-frame/mainframe.js"></script>
+	<link rel="stylesheet" href="../../Bootstrap-4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../Fontawesome/fontawesome-free-5.3.1-web/css/all.min.css">
+	<link rel="stylesheet" href="../../Sourcecode/main-frame/mainframe.css">
+	<link rel="stylesheet" href="../background-frame/frames.css">
+	<link rel="stylesheet" href="../main-frame-list/main-frame-list.css">
+	
+	<link rel="stylesheet" href="chatfriend.css">
+	<script type="text/javascript" src="chatfriend.js"></script>
+</head>
+<body id="background-app">
+	<div class="container-fluid">
+		<div class="row header-logo">
+			<div class="col-sm-2 text-center">
+				<img src="../../Images/logo.png" alt="">
+			</div>
+			<div class="col-sm-10 text-center">
+				<h2>Phần mềm chat online</h2>
+			</div>
+		</div>
+		
+		<div class="main-content row">
+			<div class="col-sm-2">
+				<div class="page-wrapper chiller-theme">
+			        <nav id="sidebar" class="sidebar-wrapper">
+			            <div class="sidebar-content">
+			                <div class="sidebar-brand">
+			                    <a href="#">Thanh công cụ</a>
+			                </div>
+			                <div class="sidebar-header">
+			                    <div class="user-pic">
+			                        <img class="img-responsive img-rounded" src="../../Images/img-profile.png" alt="User picture">
+			                    </div>
+			                    <div class="user-info">
+			                        <span class="user-name">Nguyễn Văn
+			                            <strong>Hải</strong>
+			                        </span>
+			                        <span class="user-role">Quản trị viên</span>
+			                        <span class="user-status">
+			                            <i class="fa fa-circle"></i>
+			                            <span>Đang hoạt động</span>
+			                        </span>
+			                    </div>
+			                </div>
+			                <!-- sidebar-header  -->
+			                <div class="sidebar-menu">
+			                    <ul>
+			                        <li class="header-menu">
+			                            <span>Chức năng</span>
+			                        </li>
+			                        <li class="sidebar sidebar-search">
+			                            <a href="#">
+			                                <i class="fas fa-search"></i>
+			                                <span>Tìm kiếm bạn bè</span>
+			                            </a>
+			                        </li>
+			                        <li class="sidebar sidebar-message">
+			                            <a href="#">
+			                                <i class="far fa-comment"></i>
+			                                <span>Trò chuyện</span>
+			                            </a>
+			                        </li>
+			                        <li class="sidebar sidebar-friendlist">
+			                            <a href="#">
+			                                <i class="fas fa-user-friends"></i>
+			                                <span>Danh sách bạn bè</span>
+			                            </a>
+			                        </li>
+			                        <li class="sidebar sidebar-banfriendlist">
+			                            <a href="#">
+			                                <i class="fas fa-ban"></i>
+			                                <span>Danh sách chặn</span>
+			                            </a>
+			                        </li>
+			                        <li class="sidebar sidebar-info">
+			                            <a href="#">
+			                                <i class="fas fa-info"></i>
+			                                <span>Quản lý thông tin</span>
+			                            </a>
+			                        </li>
+			                        <li class="sidebar sidebar-logout">
+			                            <a href="#">
+			                                <i class="fas fa-sign-out-alt"></i>
+			                                <span>Đăng xuất</span>
+			                            </a>
+			                        </li>
+			                    </ul>
+			                </div>
+			                <!-- sidebar-menu  -->
+			            </div>
+			        </nav>
+			        <!-- sidebar-wrapper  -->        	
+			    </div>
+			</div>
+			<div class="col-sm-10 main-function">
+				<!-- main function at here -->
+				<div class="row">
+					<div class="col-sm-2"></div>
+						<div class="col-sm-8 text-center">
+							<div class="function-title">
+								<div class="function-name">
+									<span>Trò chuyện</span>
+								</div>
+								<hr>
+							</div>
+							<!-- End function title -->
+						</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<!-- End search form -->	
+				<div class="row">
+					<!-- Chat form -->
+					<div class="main-chat">
+						<div class="head-chat">
+							<div class="headLeft-chat">
+								<div class="headLeft-sub">
+									<input type="text" name="search" placeholder="Search...">
+									<button> <i class="fa fa-search"></i> </button>
+								</div>
+							</div>
+							<div class="headRight-chat">
+								<div class="headRight-sub">
+									<h3>Lajy Ion</h3>
+									<small>Lorem ipsum dolor sit amet...</small>
+								</div>
+							</div>
+						</div>
+						<div class="body-chat">
+							<div class="left-chat mCustomScrollbar" data-mcs-theme="minimal-dark">
+								<ul>
+									<li>
+										<div class="chatList">
+											<div class="img">
+												<i class="fa fa-circle"></i>
+												<img src="../../Images/img-friend.png">
+											</div>
+											<div class="desc">
+												<small class="time">05:30 am</small>
+												<h5>Luis Yankee</h5>
+												<small>Lorem ipsum dolor sit amet...</small>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="chatList">
+											<div class="img">
+												<i class="fa fa-circle"></i>
+												<img src="../../Images/img-friend.png">
+											</div>
+											<div class="desc">
+												<small class="time">3 day</small>
+												<h5>Joi Chak</h5>
+												<small>Lorem ipsum dolor sit amet...</small>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="chatList">
+											<div class="img">
+												<img src="../../Images/img-friend.png">
+											</div>
+											<div class="desc">
+												<small class="time">4 day</small>
+												<h5>Lajy Ion</h5>
+												<small>Lorem ipsum dolor sit amet...</small>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="chatList">
+											<div class="img">
+												<img src="../../Images/img-friend.png">
+											</div>
+											<div class="desc">
+												<small class="time">18 day</small>
+												<h5>Lod Kine</h5>
+												<small>Lorem ipsum dolor sit amet...</small>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="chatList">
+											<div class="img">
+												<i class="fa fa-circle"></i>
+												<img src="../../Images/img-friend.png">
+											</div>
+											<div class="desc">
+												<small class="time">11:50 am</small>
+												<h5>Nik Minaj</h5>
+												<small>Lorem ipsum dolor sit amet...</small>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="chatList">
+											<div class="img">
+												<img src="../../Images/img-friend.png">
+											</div>
+											<div class="desc">
+												<small class="time">20 day</small>
+												<h5>Win Sina</h5>
+												<small>Lorem ipsum dolor sit amet...</small>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="chatList">
+											<div class="img">
+												<img src="../../Images/img-friend.png">
+											</div>
+											<div class="desc">
+												<small class="time">18 day</small>
+												<h5>Jack Clerk</h5>
+												<small>Lorem ipsum dolor sit amet...</small>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="chatList">
+											<div class="img">
+												<img src="../../Images/img-friend.png">
+											</div>
+											<div class="desc">
+												<small class="time">20 day</small>
+												<h5>Win Sina</h5>
+												<small>Lorem ipsum dolor sit amet...</small>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="chatList">
+											<div class="img">
+												<img src="../../Images/img-friend.png">
+											</div>
+											<div class="desc">
+												<small class="time">18 day</small>
+												<h5>Jack Clerk</h5>
+												<small>Lorem ipsum dolor sit amet...</small>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="right-chat">
+								<div class="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+									<ul>
+										<li class="msg-left">
+											<div class="msg-left-sub">
+												<img src="../../Images/img-friend.png">
+												<div class="msg-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua
+												</div>
+												<small>05:25 am</small>
+											</div>
+										</li>
+										<li class="msg-right">
+											<div class="msg-left-sub">
+												<img src="../../Images/img-friend.png">
+												<div class="msg-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua.
+												</div>
+												<small>05:25 am</small>
+											</div>
+										</li>
+										<li class="msg-day"><small>Wednesday</small></li>
+										<li class="msg-left">
+											<div class="msg-left-sub">
+												<img src="../../Images/img-friend.png">
+												<div class="msg-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit
+												</div>
+												<small>05:25 am</small>
+											</div>
+										</li>
+										<li class="msg-right">
+											<div class="msg-left-sub">
+												<img src="../../Images/img-friend.png">
+												<div class="msg-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua
+												</div>
+												<small>05:25 am</small>
+											</div>
+										</li>
+										<li class="msg-left">
+											<div class="msg-left-sub">
+												<img src="../../Images/img-friend.png">
+												<div class="msg-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit
+												</div>
+												<small>05:25 am</small>
+											</div>
+										</li>
+										<li class="msg-right">
+											<div class="msg-left-sub">
+												<img src="../../Images/img-friend.png">
+												<div class="msg-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua
+												</div>
+												<small>05:25 am</small>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="right-chat-bottom">
+									<form>
+										<div class="upload-btn">
+										  	<button class="btn"><i class="fa fa-photo"></i></button>
+										  	<input type="file" name="myfile" />
+										</div>
+										<input type="text" name="" placeholder="type here...">
+										<button class="btn-send"><i class="fa fa-send"></i></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End chat form -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
