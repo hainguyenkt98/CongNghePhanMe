@@ -22,16 +22,16 @@
 <body id="background-app">
 	<div class="container-fluid">
 		<div class="row header-logo">
-			<div class="col-sm-2 text-center">
+			<div class="image text-center">
 				<img src="../Images/logo.png" alt="">
 			</div>
-			<div class="col-sm-10 text-center">
+			<div class="appname">
 				<h2>Phần mềm chat online</h2>
 			</div>
 		</div>
 		
 		<div class="main-content row">
-			<div class="col-sm-2">
+			<div class="sidebar-cover">
 				<div class="page-wrapper chiller-theme">
 			        <nav id="sidebar" class="sidebar-wrapper">
 			            <div class="sidebar-content">
@@ -103,22 +103,23 @@
 			        <!-- sidebar-wrapper  -->        	
 			    </div>
 			</div>
-			<div class="col-sm-10 main-function">
+			<div class="main-function">
 				<!-- main function at here -->
-				<div class="row">
+				<div class="row row-title">
 					<div class="col-sm-2"></div>
-					<div class="col-sm-8 text-center">
-						<div class="function-title">
-							<div class="function-name">
-								<span>Tìm kiếm bạn bè</span>
+						<div class="col-sm-8 text-center">
+							<div class="function-title">
+								<div class="function-name">
+									<span>Tìm kiếm bạn bè</span>
+								</div>
+								<hr>
 							</div>
-							<hr>
+							<!-- End function title -->
 						</div>
-						<!-- End function title -->
-					</div>
 					<div class="col-sm-2"></div>
 				</div>
-				<div class="row">
+
+				<div class="row row-search">
 					<div class="col-sm-2"></div>
 					<div class="col-sm-8">
 						<div class="input-group mb-3">
@@ -131,142 +132,145 @@
 					<div class="col-sm-2"></div>	
 				</div>
 				<!-- End search form -->	
-				<div class="row gridview">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-8">
-						<div class="cover-list-group">				
-							<ul class="list-group">
-							  	<li class="list-group-item list-group-item-light">
-							  		<div class="row">
-							  			<div class="col-sm-2 image-friend">
-							  				<span><img src="../Images/img-friend.png" alt=""></span>
-							  			</div>
-							  			<div class="col-sm-8 info-friend">
-							  				<div class="row name-friend">
-							  					<div class="col-sm-12">
-							  						<b>Nguyễn Văn Hải</b>
-							  					</div>
-							  				</div>
-							  				<div class="row about-friend">
-							  					<div class="col-sm-12">
-							  						<i>Nam,</i>
-							  						<i>18 tuổi,</i>
-							  						<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
-							  					</div>
-							  				</div>
-							  			</div>
-							  			<div class="col-sm-2 function-friend ">
-							  				<button type="button" class="btn btn-primary add-friend ">Kết bạn</button>
-							  			</div>
-							  		</div>
-							  	</li>
-							  	
-								<li class="list-group-item list-group-item-light">
-							  		<div class="row">
-							  			<div class="col-sm-2 image-friend">
-							  				<span><img src="../Images/img-friend.png" alt=""></span>
-							  			</div>
-							  			<div class="col-sm-8 info-friend">
-							  				<div class="row name-friend">
-							  					<div class="col-sm-12">
-							  						<b>Nguyễn Văn Hải</b>
-							  					</div>
-							  				</div>
-							  				<div class="row about-friend">
-							  					<div class="col-sm-12">
-							  						<i>Nam,</i>
-							  						<i>18 tuổi,</i>
-							  						<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
-							  					</div>
-							  				</div>
-							  			</div>
-							  			<div class="col-sm-2 function-friend ">
-							  				<button type="button" class="btn btn-primary add-friend ">Kết bạn</button>
-							  			</div>
-							  		</div>
-							  	</li>
+				<div class="row row-function">
+				<!-- End search form -->	
+					<div class="row gridview">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8">
+							<div class="cover-list-group">				
+								<ul class="list-group">
+								  	<li class="list-group-item list-group-item-light">
+								  		<div class="row">
+								  			<div class="col-sm-2 image-friend">
+								  				<span><img src="../Images/img-friend.png" alt=""></span>
+								  			</div>
+								  			<div class="col-sm-8 info-friend">
+								  				<div class="row name-friend">
+								  					<div class="col-sm-12">
+								  						<b>Nguyễn Văn Hải</b>
+								  					</div>
+								  				</div>
+								  				<div class="row about-friend">
+								  					<div class="col-sm-12">
+								  						<i>Nam,</i>
+								  						<i>18 tuổi,</i>
+								  						<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								  					</div>
+								  				</div>
+								  			</div>
+								  			<div class="col-sm-2 function-friend ">
+								  				<button type="button" class="btn btn-primary add-friend ">Kết bạn</button>
+								  			</div>
+								  		</div>
+								  	</li>
+								  	
+									<li class="list-group-item list-group-item-light">
+								  		<div class="row">
+								  			<div class="col-sm-2 image-friend">
+								  				<span><img src="../Images/img-friend.png" alt=""></span>
+								  			</div>
+								  			<div class="col-sm-8 info-friend">
+								  				<div class="row name-friend">
+								  					<div class="col-sm-12">
+								  						<b>Nguyễn Văn Hải</b>
+								  					</div>
+								  				</div>
+								  				<div class="row about-friend">
+								  					<div class="col-sm-12">
+								  						<i>Nam,</i>
+								  						<i>18 tuổi,</i>
+								  						<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								  					</div>
+								  				</div>
+								  			</div>
+								  			<div class="col-sm-2 function-friend ">
+								  				<button type="button" class="btn btn-primary add-friend ">Kết bạn</button>
+								  			</div>
+								  		</div>
+								  	</li>
 
-							  	<li class="list-group-item list-group-item-light">
-							  		<div class="row">
-							  			<div class="col-sm-2 image-friend">
-							  				<span><img src="../Images/img-friend.png" alt=""></span>
-							  			</div>
-							  			<div class="col-sm-8 info-friend">
-							  				<div class="row name-friend">
-							  					<div class="col-sm-12">
-							  						<b>Nguyễn Văn Hải</b>
-							  					</div>
-							  				</div>
-							  				<div class="row about-friend">
-							  					<div class="col-sm-12">
-							  						<i>Nam,</i>
-							  						<i>18 tuổi,</i>
-							  						<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
-							  					</div>
-							  				</div>
-							  			</div>
-							  			<div class="col-sm-2 function-friend ">
-							  				<button type="button" class="btn btn-primary add-friend ">Kết bạn</button>
-							  			</div>
-							  		</div>
-							  	</li>
+								  	<li class="list-group-item list-group-item-light">
+								  		<div class="row">
+								  			<div class="col-sm-2 image-friend">
+								  				<span><img src="../Images/img-friend.png" alt=""></span>
+								  			</div>
+								  			<div class="col-sm-8 info-friend">
+								  				<div class="row name-friend">
+								  					<div class="col-sm-12">
+								  						<b>Nguyễn Văn Hải</b>
+								  					</div>
+								  				</div>
+								  				<div class="row about-friend">
+								  					<div class="col-sm-12">
+								  						<i>Nam,</i>
+								  						<i>18 tuổi,</i>
+								  						<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								  					</div>
+								  				</div>
+								  			</div>
+								  			<div class="col-sm-2 function-friend ">
+								  				<button type="button" class="btn btn-primary add-friend ">Kết bạn</button>
+								  			</div>
+								  		</div>
+								  	</li>
 
-							  	<li class="list-group-item list-group-item-light">
-							  		<div class="row">
-							  			<div class="col-sm-2 image-friend">
-							  				<span><img src="../Images/img-friend.png" alt=""></span>
-							  			</div>
-							  			<div class="col-sm-8 info-friend">
-							  				<div class="row name-friend">
-							  					<div class="col-sm-12">
-							  						<b>Nguyễn Văn Hải</b>
-							  					</div>
-							  				</div>
-							  				<div class="row about-friend">
-							  					<div class="col-sm-12">
-							  						<i>Nam,</i>
-							  						<i>18 tuổi,</i>
-							  						<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
-							  					</div>
-							  				</div>
-							  			</div>
-							  			<div class="col-sm-2 function-friend ">
-							  				<button type="button" class="btn btn-primary add-friend ">Kết bạn</button>
-							  			</div>
-							  		</div>
-							  	</li>
+								  	<li class="list-group-item list-group-item-light">
+								  		<div class="row">
+								  			<div class="col-sm-2 image-friend">
+								  				<span><img src="../Images/img-friend.png" alt=""></span>
+								  			</div>
+								  			<div class="col-sm-8 info-friend">
+								  				<div class="row name-friend">
+								  					<div class="col-sm-12">
+								  						<b>Nguyễn Văn Hải</b>
+								  					</div>
+								  				</div>
+								  				<div class="row about-friend">
+								  					<div class="col-sm-12">
+								  						<i>Nam,</i>
+								  						<i>18 tuổi,</i>
+								  						<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								  					</div>
+								  				</div>
+								  			</div>
+								  			<div class="col-sm-2 function-friend ">
+								  				<button type="button" class="btn btn-primary add-friend ">Kết bạn</button>
+								  			</div>
+								  		</div>
+								  	</li>
 
-							  	<li class="list-group-item list-group-item-light">
-							  		<div class="row">
-							  			<div class="col-sm-2 image-friend">
-							  				<span><img src="../Images/img-friend.png" alt=""></span>
-							  			</div>
-							  			<div class="col-sm-8 info-friend">
-							  				<div class="row name-friend">
-							  					<div class="col-sm-12">
-							  						<b>Nguyễn Văn Hải</b>
-							  					</div>
-							  				</div>
-							  				<div class="row about-friend">
-							  					<div class="col-sm-12">
-							  						<i>Nam,</i>
-							  						<i>18 tuổi,</i>
-							  						<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
-							  					</div>
-							  				</div>
-							  			</div>
-							  			<div class="col-sm-2 function-friend ">
-							  				<button type="button" class="btn btn-primary add-friend ">Kết bạn</button>
-							  			</div>
-							  		</div>
-							  	</li>
+								  	<li class="list-group-item list-group-item-light">
+								  		<div class="row">
+								  			<div class="col-sm-2 image-friend">
+								  				<span><img src="../Images/img-friend.png" alt=""></span>
+								  			</div>
+								  			<div class="col-sm-8 info-friend">
+								  				<div class="row name-friend">
+								  					<div class="col-sm-12">
+								  						<b>Nguyễn Văn Hải</b>
+								  					</div>
+								  				</div>
+								  				<div class="row about-friend">
+								  					<div class="col-sm-12">
+								  						<i>Nam,</i>
+								  						<i>18 tuổi,</i>
+								  						<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								  					</div>
+								  				</div>
+								  			</div>
+								  			<div class="col-sm-2 function-friend ">
+								  				<button type="button" class="btn btn-primary add-friend ">Kết bạn</button>
+								  			</div>
+								  		</div>
+								  	</li>
 
-							</ul>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<!-- End grid view -->
-					<div class="col-sm-2"></div>
-				</div>	
+						<!-- End grid view -->
+						<div class="col-sm-2"></div>
+					</div>	
+				</div>
 			</div>
 		</div>
 	</div>
