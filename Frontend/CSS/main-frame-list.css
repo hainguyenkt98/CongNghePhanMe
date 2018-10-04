@@ -1,0 +1,47 @@
+.function-title .function-name
+{
+	margin-top: 10px;
+}
+.function-title .function-name span
+{
+	font-size: 25px;
+	font-weight: bold;
+}
+.function-title hr
+{
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.col-sm-8.info-friend
+{
+    margin-left: -60px;
+    margin-top: 8px;
+}
+.list-group{
+    max-height: 720px;
+    margin-bottom: 10px;
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+}
+.cover-list-group
+{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    border: 1px solid #0b293d;
+    border-radius: 5px;
+}
+.col-sm-2.image-friend:hover img
+{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #80ced6;
+}
