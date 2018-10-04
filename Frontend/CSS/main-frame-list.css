@@ -19,7 +19,7 @@
 }
 .main-function .row-function
 {
-    height : calc(100% - 130px);
+    height : calc(100% - 80px);
 }
 .col-sm-8.info-friend
 {
@@ -63,4 +63,5 @@
 .row-search
 {
     height: 60px;
+    margin-top: 20px;
 }

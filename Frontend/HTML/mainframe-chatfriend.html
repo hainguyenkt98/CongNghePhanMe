@@ -15,7 +15,6 @@
 
 	<link rel="stylesheet" href="../CSS/mainframe.css">
 	<link rel="stylesheet" href="../CSS/frames.css">
-	<link rel="stylesheet" href="../CSS/main-frame-list.css">
 	
 	<link rel="stylesheet" href="../CSS/chatfriend.css">
 	<script type="text/javascript" src="../JS/chatfriend.js"></script>
@@ -23,17 +22,18 @@
 <body id="background-app">
 	<div class="container-fluid">
 		<div class="row header-logo">
-			<div class="image text-center">
-				<img src="../Images/logo.png" alt="">
-			</div>
-			<div class="appname">
-				<h2>Phần mềm chat online</h2>
-			</div>
-		</div>
-		
-		<div class="main-content row">
-			<div class="sidebar-cover">
-				<div class="page-wrapper chiller-theme">
+			<nav>
+			  <div class="toggle-wrap">
+			    <span class="toggle-bar"></span>
+			  </div>
+			  <hgroup>
+			  	<img class="logo" src="../Images/logo.png" alt="">
+			    <h3>Ứng dụng Web Chat Online</h3>
+			  </hgroup>
+			</nav>
+
+			<aside>
+			  <div class="page-wrapper chiller-theme">
 			        <nav id="sidebar" class="sidebar-wrapper">
 			            <div class="sidebar-content">
 			                <div class="sidebar-brand">
@@ -103,31 +103,43 @@
 			        </nav>
 			        <!-- sidebar-wrapper  -->        	
 			    </div>
-			</div>
+			</aside>
+		</div>
+		
+		<div class="main-content row">
+			
 			<div class="main-function">
 				<!-- main function at here -->
-				<div class="row row-title">
-					<div class="col-sm-2"></div>
-						<div class="col-sm-8 text-center">
-							<div class="function-title">
-								<div class="function-name">
-									<span>Trò chuyện</span>
-								</div>
-								<hr>
-							</div>
-							<!-- End function title -->
-						</div>
-					<div class="col-sm-2"></div>
-				</div>
 				<!-- End search form -->	
 				<div class="row row-function">
 					<!-- Chat form -->
+					<div class="online-list">
+						<div class="cover-list">
+							<div class="header-online">
+								<h5>Người dùng online</h5>
+							</div>
+
+
+							<div class="body-online">
+								<!-- DE DO TOI TAO VIET TIEP -->
+
+
+
+
+
+							</div>
+							<!-- end body online -->
+						</div>			
+					</div>
+					<!-- end online list -->
+
 					<div class="main-chat">
 						<div class="head-chat">
 							<div class="headLeft-chat">
 								<div class="headLeft-sub">
-									<input type="text" name="search" placeholder="Search...">
-									<button> <i class="fa fa-search"></i> </button>
+									<!-- <input type="text" name="search" placeholder="Search...">
+									<button> <i class="fa fa-search"></i> </button> -->
+									<h5>Lịch sử trò chuyện</h5>
 								</div>
 							</div>
 							<div class="headRight-chat">
