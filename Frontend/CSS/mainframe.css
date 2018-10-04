@@ -225,9 +225,17 @@
 
 
 /*------------------------main-view-function--------------------*/
-.main-view-function{
+.main-function{
     width: 100%;
     height: 100%;
+}
+.col-sm-10.main-function .row-title{
+    height: 10%;
+}
+.col-sm-10.main-function .row-function
+{
+    height: 90%;
+    background-color: yellow;
 }
 /*-----------------------------chiller-theme-------------------------------------------------*/
 
