@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head lang = "vi">
+	<title>HKT.com</title>
+	<meta charset = "UTF-8" />
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled JavaScript -->
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/mainframe.css">
+	<link rel="stylesheet" type="text/css" href="../css/list-management.css">
+
+	<link rel="stylesheet" href="../fontawesome/fontawesome-free-5.3.1-web/css/all.min.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".dropbtn").click(function(){
+				$(".sidebar").animate({
+					width: "toggle"
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="header-inner">
+			<span><img src="../images/logo.png"></span>
+			<span id="slogan">Phần mềm chat</span>
+		</div>
+	</div>		
+	<div class="canvas">
+		<div class="title-bar">
+			<button type="button" class="dropbtn"><i class="fas fa-bars"></i></button>			
+			<span id="title">Danh sách bạn bè</span>
+		</div>
+		<div class="sidebar">
+			<div class="sidebar-header">
+				<img id="avatar"src="../images/avatar.jpg"">
+				<div class="user-info">
+					<span id="user-name">
+						<strong>Nguyễn Văn Hải</strong>
+					</span>
+					<span id="user-role">Quản trị viên</span>
+					<span id="user-status">
+						<i class="fa fa-circle"></i>
+						<span>Đang hoạt động</span>
+					</span>
+				</div>
+			</div>
+			<div class="sidebar-menu">
+				<ul>
+					<li class="sidebar-feature">
+						<a href="find-friend.html">
+							<i class="fas fa-search"></i>
+							<span>Tìm kiếm bạn bè</span>
+						</a>
+					</li>
+					<li class="sidebar-feature">
+						<a href="mainframe.html">
+							<i class="far fa-comment"></i>
+							<span>Trò chuyện</span>
+						</a>
+					</li>
+					<li class="sidebar-feature">
+						<a href="friend-list.html">
+							<i class="fas fa-user-friends"></i>
+							<span>Danh sách bạn bè</span>
+						</a>
+					</li>
+					<li class="sidebar-feature">
+						<a href="block-list.html">
+							<i class="fas fa-ban"></i>
+							<span>Danh sách chặn</span>
+						</a>
+					</li>
+					<li class="sidebar-feature">
+						<a href="personal-info.html">
+							<i class="fas fa-info"></i>
+							<span>Quản lý thông tin</span>
+						</a>
+					</li>
+					<li class="sidebar-feature">
+						<a href="../sign-in.html">
+							<i class="fas fa-sign-out-alt"></i>
+							<span>Đăng xuất</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="friend-list">
+				<div class="search-bar">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
+						<div class="input-group-append">
+							<button class="btn btn-secondary" type="button"><i class="fas fa-search"></i></button>
+						</div>
+					</div>					
+				</div>
+				<!-- End search form -->
+				<div class="list-container">				
+					<ul>
+						<li class="friend">
+							<div class="avatar">
+								<span><img src="../images/img-friend.png" alt=""></span>
+							</div>
+							<div class="fl-details">
+								<div class="name">
+									<b>Nguyễn Văn Hải</b>
+								</div>
+								<div class="info">
+									<i>Nam,</i>
+									<i>18 tuổi,</i>
+									<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								</div>
+							</div>
+							<div class="selection">
+								<a href="#" class="btn btn-secondary btn-sm remove-friend">Hủy bạn</a>
+								<a href="#" class="btn btn-danger btn-sm block-friend">Chặn</a>
+							</div>
+						</li>
+						<li class="friend">
+							<div class="avatar">
+								<span><img src="../images/img-friend.png" alt=""></span>
+							</div>
+							<div class="fl-details">
+								<div class="name">
+									<b>Nguyễn Văn Hải</b>
+								</div>
+								<div class="info">
+									<i>Nam,</i>
+									<i>18 tuổi,</i>
+									<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								</div>
+							</div>
+							<div class="selection">
+								<a href="#" class="btn btn-secondary btn-sm remove-friend">Hủy bạn</a>
+								<a href="#" class="btn btn-danger btn-sm block-friend">Chặn</a>
+							</div>
+						</li>
+						<li class="friend">
+							<div class="avatar">
+								<span><img src="../images/img-friend.png" alt=""></span>
+							</div>
+							<div class="fl-details">
+								<div class="name">
+									<b>Nguyễn Văn Hải</b>
+								</div>
+								<div class="info">
+									<i>Nam,</i>
+									<i>18 tuổi,</i>
+									<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								</div>
+							</div>
+							<div class="selection">
+								<a href="#" class="btn btn-secondary btn-sm remove-friend">Hủy bạn</a>
+								<a href="#" class="btn btn-danger btn-sm block-friend">Chặn</a>
+							</div>
+						</li>
+						<li class="friend">
+							<div class="avatar">
+								<span><img src="../images/img-friend.png" alt=""></span>
+							</div>
+							<div class="fl-details">
+								<div class="name">
+									<b>Nguyễn Văn Hải</b>
+								</div>
+								<div class="info">
+									<i>Nam,</i>
+									<i>18 tuổi,</i>
+									<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								</div>
+							</div>
+							<div class="selection">
+								<a href="#" class="btn btn-secondary btn-sm remove-friend">Hủy bạn</a>
+								<a href="#" class="btn btn-danger btn-sm block-friend">Chặn</a>
+							</div>
+						</li>
+						<li class="friend">
+							<div class="avatar">
+								<span><img src="../images/img-friend.png" alt=""></span>
+							</div>
+							<div class="fl-details">
+								<div class="name">
+									<b>Nguyễn Văn Hải</b>
+								</div>
+								<div class="info">
+									<i>Nam,</i>
+									<i>18 tuổi,</i>
+									<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								</div>
+							</div>
+							<div class="selection">
+								<a href="#" class="btn btn-secondary btn-sm remove-friend">Hủy bạn</a>
+								<a href="#" class="btn btn-danger btn-sm block-friend">Chặn</a>
+							</div>
+						</li>
+						<li class="friend">
+							<div class="avatar">
+								<span><img src="../images/img-friend.png" alt=""></span>
+							</div>
+							<div class="fl-details">
+								<div class="name">
+									<b>Nguyễn Văn Hải</b>
+								</div>
+								<div class="info">
+									<i>Nam,</i>
+									<i>18 tuổi,</i>
+									<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								</div>
+							</div>
+							<div class="selection">
+								<a href="#" class="btn btn-secondary btn-sm remove-friend">Hủy bạn</a>
+								<a href="#" class="btn btn-danger btn-sm block-friend">Chặn</a>
+							</div>
+						</li>
+						<li class="friend">
+							<div class="avatar">
+								<span><img src="../images/img-friend.png" alt=""></span>
+							</div>
+							<div class="fl-details">
+								<div class="name">
+									<b>Nguyễn Văn Hải</b>
+								</div>
+								<div class="info">
+									<i>Nam,</i>
+									<i>18 tuổi,</i>
+									<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								</div>
+							</div>
+							<div class="selection">
+								<a href="#" class="btn btn-secondary btn-sm remove-friend">Hủy bạn</a>
+								<a href="#" class="btn btn-danger btn-sm block-friend">Chặn</a>
+							</div>
+						</li>
+						<li class="friend">
+							<div class="avatar">
+								<span><img src="../images/img-friend.png" alt=""></span>
+							</div>
+							<div class="fl-details">
+								<div class="name">
+									<b>Nguyễn Văn Hải</b>
+								</div>
+								<div class="info">
+									<i>Nam,</i>
+									<i>18 tuổi,</i>
+									<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								</div>
+							</div>
+							<div class="selection">
+								<a href="#" class="btn btn-secondary btn-sm remove-friend">Hủy bạn</a>
+								<a href="#" class="btn btn-danger btn-sm block-friend">Chặn</a>
+							</div>
+						</li>
+						<li class="friend">
+							<div class="avatar">
+								<span><img src="../images/img-friend.png" alt=""></span>
+							</div>
+							<div class="fl-details">
+								<div class="name">
+									<b>Nguyễn Văn Hải</b>
+								</div>
+								<div class="info">
+									<i>Nam,</i>
+									<i>18 tuổi,</i>
+									<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								</div>
+							</div>
+							<div class="selection">
+								<a href="#" class="btn btn-secondary btn-sm remove-friend">Hủy bạn</a>
+								<a href="#" class="btn btn-danger btn-sm block-friend">Chặn</a>
+							</div>
+						</li>
+						<li class="friend">
+							<div class="avatar">
+								<span><img src="../images/img-friend.png" alt=""></span>
+							</div>
+							<div class="fl-details">
+								<div class="name">
+									<b>Nguyễn Văn Hải</b>
+								</div>
+								<div class="info">
+									<i>Nam,</i>
+									<i>18 tuổi,</i>
+									<i>Linh Trung - Thủ Đức - Hồ Chí Minh</i>
+								</div>
+							</div>
+							<div class="selection">
+								<a href="#" class="btn btn-secondary btn-sm remove-friend">Hủy bạn</a>
+								<a href="#" class="btn btn-danger btn-sm block-friend">Chặn</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- End grid view -->
+			</div>	
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

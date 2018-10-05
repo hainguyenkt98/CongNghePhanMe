@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang = "vi">
+	<title>HKT.com</title>
+	<meta charset = "UTF-8" />
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+	<!-- Latest compiled JavaScript -->
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/mainframe.css">
+	<link rel="stylesheet" type="text/css" href="../css/list-management.css">
+	<link rel="stylesheet" type="text/css" href="../css/pers-info.css">
+
+	<link rel="stylesheet" href="../fontawesome/fontawesome-free-5.3.1-web/css/all.min.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".dropbtn").click(function(){
+				$(".sidebar").animate({
+					width: "toggle"
+				});
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(".form_datetime").datetimepicker({
+			format: "dd MM yyyy - hh:ii",
+			autoclose: true,
+			todayBtn: true,
+			pickerPosition: "bottom-left"
+		});
+	</script>     
+</head>
+<body>
+	<div class="header">
+		<div class="header-inner">
+			<span><img src="../images/logo.png"></span>
+			<span id="slogan">Phần mềm chat</span>
+		</div>
+	</div>		
+	<div class="canvas">
+		<div class="title-bar">
+			<button type="button" class="dropbtn"><i class="fas fa-bars"></i></button>			
+			<span id="title">Thông tin cá nhân</span>
+		</div>
+		<div class="sidebar">
+			<div class="sidebar-header">
+				<img id="avatar"src="../images/avatar.jpg"">
+				<div class="user-info">
+					<span id="user-name">
+						<strong>Nguyễn Văn Hải</strong>
+					</span>
+					<span id="user-role">Quản trị viên</span>
+					<span id="user-status">
+						<i class="fa fa-circle"></i>
+						<span>Đang hoạt động</span>
+					</span>
+				</div>
+			</div>
+			<div class="sidebar-menu">
+				<ul>
+					<li class="sidebar-feature">
+						<a href="find-friend.html">
+							<i class="fas fa-search"></i>
+							<span>Tìm kiếm bạn bè</span>
+						</a>
+					</li>
+					<li class="sidebar-feature">
+						<a href="mainframe.html">
+							<i class="far fa-comment"></i>
+							<span>Trò chuyện</span>
+						</a>
+					</li>
+					<li class="sidebar-feature">
+						<a href="friend-list.html">
+							<i class="fas fa-user-friends"></i>
+							<span>Danh sách bạn bè</span>
+						</a>
+					</li>
+					<li class="sidebar-feature">
+						<a href="block-list.html">
+							<i class="fas fa-ban"></i>
+							<span>Danh sách chặn</span>
+						</a>
+					</li>
+					<li class="sidebar-feature">
+						<a href="personal-info.html">
+							<i class="fas fa-info"></i>
+							<span>Quản lý thông tin</span>
+						</a>
+					</li>
+					<li class="sidebar-feature">
+						<a href="../sign-in.html">
+							<i class="fas fa-sign-out-alt"></i>
+							<span>Đăng xuất</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">	
+			<div class="avatar-col">
+				<div class="img-upload-btn">
+					<button class="btn">Chọn ảnh</button>
+					<input type="file" multiple accept='image/*' name="myImg">
+				</div>
+			</div>	
+			<div class="info">
+				<form action="/action_page.php">
+					<div class="form-inline">
+						<input type="text" class="form-control" name="lastname" id="leftbox" placeholder="Họ">
+						<input type="text" class="form-control" name="firstname" id="rightbox" placeholder="Tên">
+					</div>
+					<div class="form-group has-feedback">
+						<span class="form-control-feedback"><i class="fas fa-envelope"></i></span>
+						<input type="email"" class="form-control" id="email" placeholder="Email">				
+					</div>		
+					<label class="radio-inline"><input type="radio" name="optradio" checked>Nam</label>
+					<label class="radio-inline"><input type="radio" name="optradio">Nữ</label>
+					<label class="radio-inline"><input type="radio" name="optradio">Khác</label>
+					<div class="input-append date form_datetime">
+						<input size="16" type="text" value="" readonly>
+						<span class="add-on"><i class="far fa-calendar-alt"></i></i></span>
+					</div>
+					<div class="form-group has-feedback">
+						<span class="form-control-feedback"><i class="fas fa-lock"></i></span>
+						<input type="password" class="form-control" id="pwd" placeholder="Mật khẩu">
+					</div>
+					<div class="form-group has-feedback">
+						<span class="form-control-feedback"><i class="fas fa-lock"></i></span>
+						<input type="password" class="form-control" id="repwd" placeholder="Nhập lại mật khẩu">
+					</div>
+
+					<button type="submit" class="btn btn-primary" id="btn-save">Lưu</button>
+					<button type="reset" class="btn btn-primary" id="btn-cancel">Hủy</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

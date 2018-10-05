@@ -1,0 +1,10 @@
+.avatar-col{
+	position: relative;
+}
+.img-upload-btn input[type=file] {
+	height: 38px;
+	width: 94px;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+}
